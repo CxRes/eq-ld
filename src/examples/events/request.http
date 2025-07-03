@@ -1,0 +1,20 @@
+QUERY /missing/John_Doe HTTP/1.1
+Host: example.org
+Content-Type: application/ld+json
+
+{
+  "@context": "http://cxres.github.io/eq-ld/ns/context.jsonld",
+  "eq-ld:events":[
+    {
+      "@type":"http:RequestHeader",
+      "http:hdrName":"http-headers:accept",
+      "http:headerElements":[
+        {
+          "@type":"http:HeaderElement",
+          "http:elementName":"application/ld+json"
+        }
+      ]
+    }
+  ]
+}
+ㅤ
